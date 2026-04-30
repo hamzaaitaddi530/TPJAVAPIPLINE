@@ -1,13 +1,11 @@
 pipeline {
     agent any
 
+tools {
+        maven 'maven' 
+    }
+    
     stages {
-        stage('Checkout') {
-            steps {
-                
-                git 'https://github.com/hamzaaitaddi530/TPJAVAPIPLINE'
-            }
-        }
         
         stage('Build') {
             steps {
