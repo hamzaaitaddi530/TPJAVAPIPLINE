@@ -9,3 +9,20 @@ HAPPY
 <img width="1919" height="828" alt="Capture d&#39;écran 2026-04-30 150838" src="https://github.com/user-attachments/assets/e6e87874-7117-44ad-b1d1-62d571d26a5d" />
 <img width="1904" height="828" alt="Capture d&#39;écran 2026-04-30 184444" src="https://github.com/user-attachments/assets/bafaf7fe-e1ef-420a-9cbe-502eb7fc317e" />
 <img width="1900" height="832" alt="Capture d&#39;écran 2026-04-30 185019" src="https://github.com/user-attachments/assets/05bfb4ee-eccc-4213-96ab-31723959b774" />
+1. Développement et Gestion de Version
+Le code source de l'application Java a été développé sous VS Code et versionné sur GitHub pour permettre un suivi rigoureux des modifications.
+
+2. Configuration de l'Environnement Jenkins
+Une instance Jenkins a été configurée avec l'installation automatique de Maven pour assurer la compilation et la gestion des dépendances du projet.
+
+3. Création du Jenkinsfile
+Un fichier Jenkinsfile (Pipeline-as-Code) a été rédigé pour définir les étapes de construction (Build) et de test de manière automatisée.
+
+4. Mise en place du Webhook via ngrok
+L'outil ngrok a été utilisé pour créer un tunnel sécurisé, permettant à GitHub d'envoyer des notifications en temps réel à votre serveur Jenkins local.
+
+5. Automatisation du Déclenchement (Trigger)
+Le pipeline a été configuré pour démarrer automatiquement à chaque git push, garantissant une intégration continue (CI) sans intervention manuelle.
+
+6. Exécution du Build et des Tests
+Jenkins exécute les commandes mvn clean compile et mvn test, validant ainsi la qualité du code et la réussite de la compilation à chaque mise à jour
